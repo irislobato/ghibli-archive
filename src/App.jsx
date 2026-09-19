@@ -7,17 +7,17 @@ import Especies from "./pages/Especies";
 import Locais from "./pages/Locais";
 import Veiculos from "./pages/Veiculos";
 import Personagens from "./pages/Personagens";
-import DetalhesEspecie from ".pages/DetalhesEspecie";
-import DetalhesLocal from ".pages/DetalhesLocal";
-import DetalhesPersonagem from ".pages/DetalhesPeersonagem";
-import DetalhesVeiculo from ".pages/DetalhesVeiculo";
+import DetalhesEspecie from "./pages/DetalhesEspecie";
+import DetalhesLocal from "./pages/DetalhesLocal";
+import DetalhesPersonagem from "./pages/DetalhesPersonagem";
+import DetalhesVeiculo from "./pages/DetalhesVeiculo";
 import { Routes, Route } from "react-router-dom";
 
 export default function App() {
   return (
     <Routes>
       <Route path="/" element={<Layout />}>
-        <Route index Element={<Home />} />
+        <Route index element={<Home />} />
         <Route path="item/:id" element={<Detalhes />} />
         <Route path="sobre" element={<Sobre />} />
         <Route path="personagens" element={<Personagens />} />
