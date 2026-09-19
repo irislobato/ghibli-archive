@@ -1,0 +1,40 @@
+import React from "react";
+import { Outlet, Link, NavLink } from "react-router-dom";
+
+export default function Layout() {
+  return (
+    <div>
+      <header>
+        <h1 className="titulo-logo">Ghibli Archive</h1>
+        <nav>
+          <NavLink className="link" to="/">
+            Home
+          </NavLink>
+          <NavLink className="link" to="galeria">
+            Galeria
+          </NavLink>
+          <NavLink className="link" to="sobre">
+            Sobre
+          </NavLink>
+        </nav>
+      </header>
+
+      <Outlet></Outlet>
+
+      <footer>
+        <div className="footer-container">
+          <div className="footer-esquerda">
+            <h1>A enciclopédia dos Studios Ghibli</h1>
+            <p></p>
+          </div>
+          <div className="footer-direita">
+            <h3>Recursos</h3>
+            <a href="">Ghibli API docs</a>
+            <a href="">GhibliArchive GitGub</a>
+          </div>
+        </div>
+        <p className="copyright">© 2026 Studio Ghibli Archive. Todos os direitos reservados.</p>
+      </footer>
+    </div>
+  );
+}
