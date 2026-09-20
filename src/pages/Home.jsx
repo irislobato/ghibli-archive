@@ -56,7 +56,7 @@ export default function Home() {
       if (ordenacao === "ano-asc")
         return Number(a.release_date) - Number(b.release_date);
       if (ordenacao === "score") return Number(b.rt_score) - Number(a.rt_score);
-      if (ordenacao === "titulo") return a.title.localCompare(b.title);
+      if (ordenacao === "titulo") return a.title.localeCompare(b.title);
       return 0;
     });
 
@@ -108,7 +108,7 @@ export default function Home() {
               <span className="filtro-span">Filtro:</span>
               <select
                 value={ordenacao}
-                onChange={(e) => setOrdenaacao(e.target.value)}
+                onChange={(e) => setOrdenacao(e.target.value)}
               >
                 <option value="ano-desc">Mais recentes</option>
                 <option value="ano-asc">Mais velhos</option>

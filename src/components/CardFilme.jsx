@@ -1,14 +1,17 @@
 import React from "react";
-import "./CardFilme.css"
+import "./CardFilme.css";
+import { Link } from "react-router-dom";
 
 export default function CardFilme({ dadosDoFilme }) {
   return (
     <article>
-      <img
-        src={dadosDoFilme.image}
-        alt={`Banner pricipal do filme ${dadosDoFilme.title}`}
-        className="card-img"
-      />
+      <Link className="card-link" to={`/item/${dadosDoFilme.id}`}>
+        <img
+          src={dadosDoFilme.image}
+          alt={`Banner pricipal do filme ${dadosDoFilme.title}`}
+          className="card-img"
+        />
+      </Link>
       <div className="card-info">
         <div className="card-topo">
           <h5>{dadosDoFilme.director}</h5>
