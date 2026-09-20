@@ -10,9 +10,7 @@ export default function Layout() {
           <NavLink className="link" to="/">
             Home
           </NavLink>
-          <NavLink className="link" to="galeria">
-            Galeria
-          </NavLink>
+        
           <NavLink className="link" to="sobre">
             Sobre
           </NavLink>
