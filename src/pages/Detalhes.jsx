@@ -60,7 +60,7 @@ export default function Detalhes() {
       )}
 
       {!carregando && !erro && detalhes && (
-        <div className="container-detalhes">
+        <article className="container-detalhes">
           <div className="banner-container">
             <img
               className="banner"
@@ -69,7 +69,7 @@ export default function Detalhes() {
             />
           </div>
 
-          <div className="conteudo-detalhes">
+          <section className="conteudo-detalhes">
             <p className="release">{detalhes.release_date}</p>
             <h1 className="titulo-detalhes">
               {detalhes.title} · {detalhes.original_title}
@@ -131,8 +131,8 @@ export default function Detalhes() {
                 </section>
               </div>
             </div>
-          </div>
-        </div>
+          </section>
+        </article>
       )}
     </div>
   );
