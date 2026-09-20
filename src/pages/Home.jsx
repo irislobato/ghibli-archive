@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import CardFilme from "../components/CardFilme";
 import SearchBar from "../components/SearchBar";
+import "./Home.css";
 
 export default function Home() {
   const [filmes, setFilmes] = useState([]);

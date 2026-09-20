@@ -1,0 +1,16 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card-img{
+    max-width: 250px;
+    padding: 5px;
+}
+.card-topo{
+    display: flex;
+}
+.estrela{
+    width: 15px;
+    height: 15px;
+}

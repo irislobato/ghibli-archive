@@ -1,4 +1,5 @@
 import React from "react";
+import "./CardFilme.css"
 
 export default function CardFilme({ dadosDoFilme }) {
   return (
