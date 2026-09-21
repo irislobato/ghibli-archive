@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
+import "./DetalhesPersonagem.css"
 
 export default function DetalhesPersonagem() {
   const { id } = useParams();

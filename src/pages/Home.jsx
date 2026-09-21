@@ -61,7 +61,7 @@ export default function Home() {
     });
 
   return (
-    <div>
+    <div className="home">
       {/*Introdução */}
       <section className="introducao">
         <div className="info-introducao">

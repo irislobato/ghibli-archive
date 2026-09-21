@@ -1,10 +1,43 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.grid-filmes{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+.home {
+  background-color: #fcfaf2;
+}
+.grid-filmes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  justify-items: center;
+  padding-inline: 30px;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+.introducao {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  padding: 40px;
+  justify-content: space-between;
+}
+.titulinho-intro {
+  color: #c25b45;
+  font-family: "DM Sans";
+  font-weight: 900;
+  font-size: 15px;
+}
+.titulo-intro{
+    font-family: "Fraunces";
+    font-size: 50px;
+    color: #2B2927;
+}
+.sub-intro{
+    font-family: "DM Sans";
+    color: #6B6661;
+    font-size: 17px;
+    margin-top: 15px;
+    margin-bottom: 40px;
 }
