@@ -105,12 +105,31 @@ select {
 }
 
 @media (max-width: 900px) {
-  .grid-filmes {
-    grid-template-columns: 1fr;
+  .introducao {
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem 1rem; /* Reduz o padding lateral para dar mais espaço útil */
+    text-align: center;
+    width: 100%;
+  }
+
+  .info-introducao {
+    width: 100%;
+    overflow-wrap: break-word; /* Evita que palavras longas extrapolem o container */
+  }
+
+  .introducao img {
+    max-width: 100%;
   }
 
   .titulo-intro {
-    font-size: 2.2rem;
+    font-size: 1.75rem; /* Reduzido proporcionalmente para caber perfeitamente no mobile */
+    line-height: 1.3;
+  }
+
+  .grid-filmes {
+    grid-template-columns: 1fr;
+    padding-inline: 1rem;
   }
 
   .filtro {
@@ -121,5 +140,11 @@ select {
 
   .container-filtro {
     padding-inline: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  input{
+    max-width: 20rem;
   }
 }
