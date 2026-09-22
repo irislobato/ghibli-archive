@@ -108,14 +108,14 @@ select {
   .introducao {
     flex-direction: column;
     gap: 2rem;
-    padding: 1.5rem 1rem; /* Reduz o padding lateral para dar mais espaço útil */
+    padding: 1.5rem 1rem; 
     text-align: center;
     width: 100%;
   }
 
   .info-introducao {
     width: 100%;
-    overflow-wrap: break-word; /* Evita que palavras longas extrapolem o container */
+    overflow-wrap: break-word;
   }
 
   .introducao img {
@@ -123,7 +123,7 @@ select {
   }
 
   .titulo-intro {
-    font-size: 1.75rem; /* Reduzido proporcionalmente para caber perfeitamente no mobile */
+    font-size: 1.75rem;
     line-height: 1.3;
   }
 
