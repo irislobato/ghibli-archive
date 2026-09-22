@@ -16,7 +16,7 @@ Um portal artesanal e arquivo interativo para explorar os mundos fantásticos, f
 
 | Página de Detalhes do Personagem |
 
-<img src="./public/DetalhesPersonagens.png" alt="Página de detalhes dos personagens do site Ghibli Archive" width="300"/>
+<img src="./public/DetalhesPersonagem.png" alt="Página de detalhes dos personagens do site Ghibli Archive" width="300"/>
 
 | Pagina Sobre |
 
