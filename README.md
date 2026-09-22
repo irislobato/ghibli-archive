@@ -2,6 +2,9 @@
 
 Um portal artesanal e arquivo interativo para explorar os mundos fantásticos, filmes e personagens do Studio Ghibli. Desenvolvido com foco em alta performance, acessibilidade (padrões AAA) e uma estética visual inspirada em guias de campo ilustrados à mão.
 
+# Clique aqui para acessar:
+https://ghibliarchiveoficial.web.app/
+
 ---
 
 ## Capturas de Tela
