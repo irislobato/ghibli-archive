@@ -1,0 +1,170 @@
+.container-detalhes {
+  background-color: #fbf7ee;
+  min-height: 100vh;
+  font-family: serif;
+  color: #2a2523;
+  padding-bottom: 4rem;
+}
+
+.banner-container {
+  width: 100%;
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+}
+
+.banner {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.9);
+}
+
+.conteudo-detalhes {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+}
+
+.release {
+  font-family: "DM Sans";
+  font-size: 1rem;
+  color: #b85d38;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+}
+
+.titulo-detalhes {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2a2523;
+  margin-top: 0;
+  margin-bottom: 3rem;
+}
+
+.infos-container {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.diretor-container {
+  background-color: #f2ece1;
+  border: 1px solid #ded6c9;
+  border-radius: 4px;
+  padding: 2rem 1.5rem;
+}
+
+.titulinho-diretor-detalhes {
+  font-size: 1.25rem;
+  font-weight: 700;
+  border-bottom: 1px solid #ded6c9;
+  padding-bottom: 0.75rem;
+  margin: 0 0 0.25rem;
+  font-family: "Fraunces";
+}
+
+.titulinho-compendium {
+  font-family: "DM Sans";
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #6e675f;
+  margin: 1.25rem 0 0.2rem;
+}
+
+.sub-titulinho-compendium {
+  font-family: "DM Sans";
+  font-size: 0.95rem;
+  color: #2a2523;
+}
+
+.sinopse-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.titulo-sinopse {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.descricao {
+  font-size: 0.95rem;
+  font-family: "DM Sans";
+  line-height: 1.5;
+  font-weight: 500;
+  color: #6e675f;
+}
+
+.secao-relacionados {
+  border-top: 1px solid #ded6c9;
+  padding-top: 2rem;
+  margin-top: 1rem;
+}
+
+.titulo-det {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0 0 0.25rem;
+  font-family: "Fraunces";
+}
+
+.subtitulo-relacionados {
+  font-family: "DM Sans";
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #2f4f3e;
+  margin: 0 0 1.25rem;
+}
+
+.grid-personagens-relacionados {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.card-personagem-relacionado {
+  background-color: #f2ece1;
+  border: 1px solid #ded6c9;
+  border-radius: 4px;
+  padding: 0.85rem 1.25rem;
+  text-decoration: none;
+  min-width: 180px;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-personagem-relacionado:hover {
+  transform: translateY(-2px);
+  border-color: #b85d38;
+}
+
+.nome-personagem {
+  font-family: "DM Sans";
+  font-size: 1rem;
+  font-weight: 800;
+  font-size: 1rem;
+  color: #2a2523;
+  margin: 0;
+}
+
+.aviso-sem-dados {
+  font-family: "DM Sans"f;
+  font-size: 0.9rem;
+  color: #6e675f;
+  font-style: italic;
+}
+
+@media (max-width: 900px) {
+  .infos-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .titulo-detalhes {
+    font-size: 2rem;
+  }
+}

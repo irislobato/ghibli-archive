@@ -1,0 +1,153 @@
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  background-color: #fbf8f1;
+  padding: 1.25rem 3rem;
+  border-bottom: 1px solid #ded6c9;
+  font-family: sans-serif;
+}
+
+.titulo-logo {
+  grid-column: 1;
+  justify-self: start;
+  font-family: serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #2a2523;
+  letter-spacing: 0.5px;
+}
+
+nav {
+  grid-column: 2;
+  display: flex;
+  gap: 1.25rem; 
+  flex-direction: row;
+  align-items: center;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+  color: #2B2927;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.link:hover {
+  color: #b85d38;
+}
+
+.link.active {
+  color: #b85d38;
+  font-weight: 600;
+}
+
+.link.active::after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background-color: #b85d38;
+  border-radius: 50%;
+  margin-top: 3px;
+}
+
+footer {
+  padding: 1.875rem; 
+  background-color: #f4f0e4;
+  border-top: 1px solid #ded6c9;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 1.875rem; 
+  gap: 3rem;
+  flex-wrap: wrap;
+}
+
+.footer-esquerda {
+  flex: 1;
+  min-width: 250px;
+}
+
+.footer-titulo {
+  font-family: "Fraunces";
+  font-size: 1.875rem;
+  margin-bottom: 1.25rem; 
+  color: #2B2927;
+}
+
+.paragrafo-footer {
+  font-family: "DM Sans";
+  margin-bottom: 2rem;
+  color: #6B6661;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.footer-direita {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+}
+
+.a-footer {
+  text-decoration: none;
+  color: #2B2927;
+  font-family: "DM Sans";
+  font-size: 0.95rem;
+  transition: color 0.2s ease;
+}
+
+.a-footer:hover {
+  color: #b85d38;
+}
+
+.recursos-titulo {
+  color: #6B6661;
+  font-family: "DM Sans";
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.copyright {
+  color: #6B6661;
+  font-family: "DM Sans";
+  text-align: center;
+  font-size: 0.75rem; 
+  margin-top: 2.5rem;
+  border-top: 1px solid #e5dfd5;
+  padding-top: 1.25rem;
+}
+
+
+@media (max-width: 900px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.25rem 1.5rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 2rem;
+    padding-inline: 0;
+  }
+
+  .footer-direita {
+    margin-left: 0;
+  }
+
+  .paragrafo-footer {
+    margin-bottom: 1.5rem;
+  }
+}

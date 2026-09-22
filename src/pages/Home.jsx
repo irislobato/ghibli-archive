@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import CardFilme from "../components/CardFilme";
 import SearchBar from "../components/SearchBar";
 import "./Home.css";
+import Loading from "../components/Loading";
 
 export default function Home() {
   const [filmes, setFilmes] = useState([]);
@@ -87,7 +88,7 @@ export default function Home() {
 
       {/*Catálogo e filtro */}
       <section>
-        <div className="titulo-filtro">
+        <div className="container-filtro">
           <h2 className="titulo-catalogo">Catálogo de Filmes</h2>
           <div className="filtro">
             <label className="filtro-grupo">
@@ -119,11 +120,7 @@ export default function Home() {
           </div>
         </div>
 
-        {carregando && (
-          <div className="feedback-container">
-            <p>Reunindo os espíritos da floresta...</p>
-          </div>
-        )}
+        {carregando && <Loading/>}
 
         {erro && (
           <div className="feedback-container-erro">
@@ -134,30 +131,12 @@ export default function Home() {
         {!carregando && !erro && (
           <div className="grid-filmes">
             {filmesFiltrados.map((filme) => (
-              <CardFilme key={filme.id} dadosDoFilme={filme}></CardFilme>
+              <CardFilme className="cardFilme" key={filme.id} dadosDoFilme={filme}></CardFilme>
             ))}
           </div>
         )}
       </section>
-
-      {/*Sub-rotas se formos fazer */}
-      <section className="portal-container">
-        <h2 className="titulo-catalogo">Portais Abertos</h2>
-        <div className="grid-portais">
-          <Link to="/personagens" className="portal-card">
-            <div className="portal-info">
-              <h3 className="tipo-portal">Personagens</h3>
-              <p className="sub-portal">Pessoas do Vale</p>
-            </div>
-          </Link>
-          <Link to="/locais" className="portal-card">
-            <div className="portal-info">
-              <h3 className="tipo-portal">Locais</h3>
-              <p className="sub-portal">Florestas & Santuários</p>
-            </div>
-          </Link>
-        </div>
-      </section>
+     
     </div>
   );
 }

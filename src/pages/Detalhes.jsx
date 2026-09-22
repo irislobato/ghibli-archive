@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import "./Detalhes.css"
+import "./Detalhes.css";
+import Loading from "../components/Loading";
 
 export default function Detalhes() {
   const { id } = useParams();
@@ -48,11 +49,7 @@ export default function Detalhes() {
 
   return (
     <div>
-      {carregando && (
-        <div className="feedback-container">
-          <p>Reunindo os espíritos da floresta...</p>
-        </div>
-      )}
+      {carregando && <Loading />}
 
       {erro && (
         <div className="feedback-container-erro">
@@ -78,7 +75,7 @@ export default function Detalhes() {
 
             <div className="infos-container">
               <div className="diretor-container">
-                <h3 className="titulinho-diretor-delahes">Síntese</h3>
+                <h3 className="titulinho-diretor-detalhes">Síntese</h3>
 
                 <h4 className="titulinho-compendium">DIRETOR</h4>
                 <p className="sub-titulinho-compendium">{detalhes.director}</p>
@@ -101,12 +98,12 @@ export default function Detalhes() {
               </div>
 
               <div className="sinopse-container">
-                <h2 className="titulo-sinopse">Sinopse</h2>
+                <h2 className="titulo-det">Sinopse</h2>
                 <p className="descricao">{detalhes.description}</p>
 
                 {/* Seção de personagens relacionados*/}
                 <section className="secao-relacionados">
-                  <h3 className="titulo-relacionados">Registros de Relação</h3>
+                  <h3 className="titulo-det">Registros de Relação</h3>
                   <p className="subtitulo-relacionados">Personagens do filme</p>
 
                   <div className="grid-personagens-relacionados">

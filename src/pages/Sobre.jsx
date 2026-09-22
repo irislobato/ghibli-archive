@@ -10,7 +10,7 @@ export default function Sobre() {
           Desenvolvemos este projeto não apenas como um sistema de consulta, mas
           como uma homenagem à animação tradicional. Queríamos que navegar por
           aqui transmitisse a mesma calma de folhear um diário ilustrado à mão.
-          Por isso, aliámos o código a uma estética artesanal, resgatando as
+          Por isso, alinhamos o código a uma estética artesanal, resgatando as
           paisagens e as criaturas que tornam os mundos de Ghibli tão
           inesquecíveis.
         </p>

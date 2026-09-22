@@ -1,0 +1,170 @@
+.pagina-personagem {
+  background-color: #fbf7ee;
+  min-height: 70vh;
+  font-family: "Fraunces";
+  color: #2a2523;
+  padding: 2rem 2rem 4rem 2rem;
+}
+
+.voltar {
+  display: inline-block;
+  margin-bottom: 2rem;
+  color: #2f4f3e;
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.voltar:hover {
+  text-decoration: underline;
+}
+
+.cartao-arquivo-personagem {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 3.5rem;
+  align-items: start;
+}
+
+.secao-atributos {
+  grid-column: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.titulo-secao {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 0.75rem 0;
+  border-bottom: 1px solid #ded6c9;
+  padding-bottom: 0.5rem;
+  font-family: "Fraunces";
+}
+
+.grelha-atributos {
+  background-color: #f2ece1;
+  border: 1px solid #ded6c9;
+  border-radius: 4px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.bloco-atributo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #ded6c9;
+  padding-bottom: 0.5rem;
+}
+
+.bloco-atributo:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.especificacao {
+  font-family: "DM Sans";
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #6e675f;
+  text-transform: uppercase;
+}
+
+.atributo {
+  font-family: "DM Sans";
+  font-size: 0.95rem;
+  color: #2a2523;
+  font-weight: 600;
+}
+
+.perfil-identificacao {
+  grid-column: 2;
+  margin-bottom: 2.5rem;
+}
+
+.categoria-tag {
+  font-family: "DM Sans";
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #b85d38;
+  margin: 0 0 0.25rem 0;
+  text-transform: uppercase;
+}
+
+.nome-principal {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #2a2523;
+  font-family: "Fraunces";
+}
+
+.secao-filmes-vinculados {
+  grid-column: 2;
+}
+
+.secao-filmes-vinculados .titulo-secao {
+  margin-bottom: 1rem;
+}
+
+.container-filmes-personagem {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-filme-vinculado {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  background-color: #f2ece1;
+  border: 1px solid #ded6c9;
+  border-radius: 4px;
+  padding: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s ease, border-color 0.2s ease;
+}
+
+.card-filme-vinculado:hover {
+  transform: translateY(-2px);
+  border-color: #b85d38;
+}
+
+.banner-miniatura {
+  width: 120px;
+  height: 75px;
+  object-fit: cover;
+  border-radius: 3px;
+}
+
+.info-miniatura h3 {
+  font-family: "Fraunces";
+  font-size: 1.1rem;
+  margin: 0 0 0.25rem 0;
+  color: #2a2523;
+}
+
+.info-miniatura p {
+  font-family: "DM Sans";
+  font-size: 0.8rem;
+  color: #6e675f;
+}
+
+@media (max-width: 850px) {
+  .cartao-arquivo-personagem {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  .perfil-identificacao,
+  .secao-filmes-vinculados {
+    grid-column: 1;
+  }
+}

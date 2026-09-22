@@ -3,14 +3,53 @@
     padding: 0;
     box-sizing: border-box;
 }
+.card-link{
+    text-decoration: none;
+    color: #2B2927;
+}
 .card-img{
     max-width: 250px;
-    padding: 5px;
+    
 }
 .card-topo{
     display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
 }
 .estrela{
     width: 15px;
     height: 15px;
+    margin-right: 5px;
+}
+.card-info{
+    padding: 20px;
+    max-width: 250px;
+    background-color: #f4f0e4;
+    margin-top: -4px;
+    border: 1px solid oklch(83.566% 0.02726 65.54);
+    border-top: none;
+}
+.diretor-card{
+    font-family: "DM Sans";
+    color: #C25B45;
+}
+.rating-numero{
+    font-family: "DM Sans";
+    font-weight: 500;
+    font-size: 13px;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.titulo-filme{
+    font-family: "Fraunces";
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+.lancamento{
+    font-family: "DM Sans";
+    font-size: 13px;
+    font-weight: 600;
+    color: #6B6661;
 }

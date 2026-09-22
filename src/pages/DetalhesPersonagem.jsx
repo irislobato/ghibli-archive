@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import "./DetalhesPersonagem.css"
+import "./DetalhesPersonagem.css";
+import Loading from "../components/Loading";
 
 export default function DetalhesPersonagem() {
   const { id } = useParams();
@@ -52,11 +53,7 @@ export default function DetalhesPersonagem() {
         ← Voltar ao Catálogo
       </Link>
 
-      {carregando && (
-        <div className="feedback-container">
-          <p>Vasculhando registos nos arquivos do vale...</p>
-        </div>
-      )}
+      {carregando && <Loading />}
 
       {erro && (
         <div className="feedback-container erro">
@@ -96,36 +93,38 @@ export default function DetalhesPersonagem() {
             </div>
           </section>
 
-          <div className="perfil-identificacao">
-            <p className="categoria-tag">REGISTO DE RESIDENTE</p>
-            <h1 className="nome-principal">{personagem.name}</h1>
-          </div>
-
-          {/* Secção de Obras Relacionadas */}
-          <section className="secao-filmes-vinculados">
-            <h2 className="titulo-secao">Aparições</h2>
-            <div className="container-filmes-personagem">
-              {filmesRelacionados.map((filme) => (
-                <Link
-                  to={`/item/${filme.id}`}
-                  key={filme.id}
-                  className="card-filme-vinculado"
-                >
-                  <img
-                    src={filme.image}
-                    alt= {`Poster do filme ${filme.title} que a personagem ${personagem.name} apareceu.`}
-                    className="banner-miniatura"
-                  />
-                  <div className="info-miniatura">
-                    <h3>{filme.title}</h3>
-                    <p>
-                      {filme.original_title} • {filme.release_date}
-                    </p>
-                  </div>
-                </Link>
-              ))}
+          <div className="container-direita">
+            <div className="perfil-identificacao">
+              <p className="categoria-tag">REGISTO DE RESIDENTE</p>
+              <h1 className="nome-principal">{personagem.name}</h1>
             </div>
-          </section>
+
+            {/* Secção de Obras Relacionadas */}
+            <section className="secao-filmes-vinculados">
+              <h2 className="titulo-secao">Aparições</h2>
+              <div className="container-filmes-personagem">
+                {filmesRelacionados.map((filme) => (
+                  <Link
+                    to={`/item/${filme.id}`}
+                    key={filme.id}
+                    className="card-filme-vinculado"
+                  >
+                    <img
+                      src={filme.image}
+                      alt={`Poster do filme ${filme.title} que a personagem ${personagem.name} apareceu.`}
+                      className="banner-miniatura"
+                    />
+                    <div className="info-miniatura">
+                      <h3>{filme.title}</h3>
+                      <p>
+                        {filme.original_title} • {filme.release_date}
+                      </p>
+                    </div>
+                  </Link>
+                ))}
+              </div>
+            </section>
+          </div>
         </article>
       )}
     </main>
