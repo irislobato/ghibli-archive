@@ -1,16 +1,55 @@
-# React + Vite
+# Ghibli Archive 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Um portal artesanal e arquivo interativo para explorar os mundos fantásticos, filmes e personagens do Studio Ghibli. Desenvolvido com foco em alta performance, acessibilidade (padrões AAA) e uma estética visual inspirada em guias de campo ilustrados à mão.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Capturas de Tela
 
-## React Compiler
+| Página Inicial (Home) | 
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+<img src=".public/Home.png" alt="Página Home do Site Ghibli Archive" width="300" />
 
-## Expanding the ESLint configuration
+| Página de Detalhes do Filme |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+<img src=".public/DetalhesFilmes.png" alt="Página de detalhes do filme do site Ghibli Archive" width="300">
+
+| Página de Detalhes do Personagem |
+
+| Pagina Sobre |
+
+---
+
+## Integrantes do Grupo
+
+* Iris Lobato 
+* Riquelme Fagundes
+
+---
+
+## Tecnologias Utilizadas
+
+* *React* & *React Router*
+* *Vite*
+* *CSS Customizado* (com as fontes Fraunces e DM Sans)
+* *Ghibli API* 
+
+---
+
+## Instalação e Execução Local
+
+Para executar este projeto na sua máquina local, siga os passos abaixo:
+
+1. *Pré-requisitos:* Certifique-se de ter o [Node.js](https://nodejs.org/) instalado no seu computador.
+
+2. *Clonar o repositório:*
+   ```bash
+   git clone [https://github.com/irislobato/ghibli-archive.git]
+
+3. *Ao abrir no VSCode:* Abra o terminal e digite: "npm install", clicando Enter em seguida.
+
+4. *Rodando o site:*Digite, ainda no terminal, "npm run dev", também apertando Enter em seguida.
+
+5. *Visualizando  o site:* Copie o link que o terminal iniciou e cole no seu navegador de preferência.
+
+6. *Caso dê error to fetch no navegador:* Aperte Crtl + Shift + R para recarregar a página de maneira forçada.
