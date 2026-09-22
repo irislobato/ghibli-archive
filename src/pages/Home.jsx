@@ -83,6 +83,8 @@ export default function Home() {
         <img
           src="painel-ilustracao.png"
           alt="Pintura em aquarela de uma grande árvore sobre uma colina verdejante, com campos ondulados, uma casa de campo ao fundo e céu nublado no estilo clássico Ghibli"
+          width="560"
+          height="400"
         />
       </section>
 
@@ -120,7 +122,7 @@ export default function Home() {
           </div>
         </div>
 
-        {carregando && <Loading/>}
+        {carregando && <Loading />}
 
         {erro && (
           <div className="feedback-container-erro">
@@ -131,12 +133,15 @@ export default function Home() {
         {!carregando && !erro && (
           <div className="grid-filmes">
             {filmesFiltrados.map((filme) => (
-              <CardFilme className="cardFilme" key={filme.id} dadosDoFilme={filme}></CardFilme>
+              <CardFilme
+                className="cardFilme"
+                key={filme.id}
+                dadosDoFilme={filme}
+              ></CardFilme>
             ))}
           </div>
         )}
       </section>
-     
     </div>
   );
 }

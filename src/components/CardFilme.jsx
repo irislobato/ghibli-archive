@@ -10,11 +10,14 @@ export default function CardFilme({ dadosDoFilme }) {
           src={dadosDoFilme.image}
           alt={`Banner pricipal do filme ${dadosDoFilme.title}`}
           className="card-img"
+          width="300"
+          height="450"
+          loading="lazy"
         />
 
         <div className="card-info">
           <div className="card-topo">
-            <h5 className="diretor-card">{dadosDoFilme.director}</h5>
+            <p className="diretor-card">{dadosDoFilme.director}</p>
             <div className="rating">
               <svg
                 className="estrela"
@@ -44,7 +47,7 @@ export default function CardFilme({ dadosDoFilme }) {
               <span className="rating-numero">{dadosDoFilme.rt_score}</span>
             </div>
           </div>
-          <h3 className="titulo-filme">{dadosDoFilme.title}</h3>
+          <h4 className="titulo-filme">{dadosDoFilme.title}</h4>
           <p className="lancamento">{dadosDoFilme.release_date}</p>
         </div>
       </Link>
