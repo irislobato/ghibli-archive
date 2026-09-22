@@ -8,19 +8,19 @@ Um portal artesanal e arquivo interativo para explorar os mundos fantásticos, f
 
 | Página Inicial (Home) | 
 
-<img src="./Home.png" alt="Página Home do Site Ghibli Archive" width="300" />
+<img src="./public/Home.png" alt="Página Home do Site Ghibli Archive" width="300" />
 
 | Página de Detalhes do Filme |
 
-<img src="./DetalhesFilmes.png" alt="Página de detalhes do filme do site Ghibli Archive" width="300" />
+<img src="./public/DetalhesFilmes.png" alt="Página de detalhes do filme do site Ghibli Archive" width="300" />
 
 | Página de Detalhes do Personagem |
 
-<img src="./DetalhesPersonagens.png" alt="Página de detalhes dos personagens do site Ghibli Archive" width="300"/>
+<img src="./public/DetalhesPersonagens.png" alt="Página de detalhes dos personagens do site Ghibli Archive" width="300"/>
 
 | Pagina Sobre |
 
-<img src="./Sobre.png" alt="Página Sobre do site Ghibli Archive" width="300"/>
+<img src="./public/Sobre.png" alt="Página Sobre do site Ghibli Archive" width="300"/>
 
 ---
 
